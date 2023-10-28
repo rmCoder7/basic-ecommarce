@@ -20,3 +20,27 @@ totalamount = parseInt(totalamount)+parseInt(price);
 
 
 }
+
+const inputFiled = document.getElementById('inputdata')
+
+const submitButton = document.getElementById("btnCupon")
+
+inputFiled.addEventListener("keypress" , (e) =>{
+
+// console.log(e.currentTarget.value);
+
+const dataValue = e.currentTarget.value;
+
+if(dataValue === " ")
+{
+    submitButton.disabled = true;
+
+}else{
+
+    submitButton.disabled= false;
+    
+}
+
+
+})
+
